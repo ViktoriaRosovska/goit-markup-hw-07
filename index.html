@@ -18,25 +18,31 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
   </head>
   <body>
-    <header class="header section">
+    <header class="header-section section">
       <div class="header-container container">
-        <nav class="nav-list">
-          <a class="webstudio-logo" href="./index.html" id="logo"
-            ><span class="design-logo">WEB</span>STUDIO</a
-          >
-          <ul class="site-nav">
-            <li class="item">
+         <a class="webstudio-logo" href="./index.html" id="logo"
+        >WEB<span class="webstudio-logo__theme-logo">STUDIO</span></a
+      >
+      <svg class="header-menu-icon" width="32" height="22">
+        <use class="menu-icon" href="./images/svg/menu.svg#menu"></use>
+      </svg>
+      <div class="header-menu">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-list-item">
               <a class="link current" href="./index.html">Studio</a>
             </li>
 
-            <li class="item">
+            <li class="nav-list-item">
               <a class="link" href="./portfolio.html">Portfolio</a>
             </li>
 
-            <li class="item"><a class="link" href="">Contacts</a></li>
+            <li class="nav-list-item"><a class="link" href="">Contacts</a></li>
           </ul>
         </nav>
         <ul class="adress-list">
@@ -49,7 +55,9 @@
             <a class="link" href="tel:+11(000)1111111">+11 (000) 111-11-11</a>
           </li>
         </ul>
+      </div> 
       </div>
+     
     </header>
     <main>
       <!-- section Hero -->
@@ -62,7 +70,7 @@
         </div>
       </section>
 
-      <!-- section "Features list" -->
+      <!-- section "Features list"
       <section class="section">
         <div class="container">
           <h2 class="section-title visually-hidden">Our features</h2>
@@ -128,10 +136,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- section "Work list" -->
-      <section class="section work">
+      <!-- <section class="section work">
         <div class="work-container container">
           <h2 class="section-title">What are we doing</h2>
           <ul class="work-list">
@@ -172,13 +180,13 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- section "Our Team" -->
-      <section class="section section-team section-colored">
+      <!-- <section class="section section-team section-colored">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
-          <!-- list of team's card -->
+           list of team's card 
           <ul class="team-list">
             <li class="list-item">
               <div class="thumb">
@@ -401,9 +409,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="section">
+      <!-- <section class="section">
         <h2 class="section-title">Customers</h2>
         <div class="container">
           <ul class="customers-list">
@@ -459,10 +467,10 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
 
     <!-- footer section -->
-    <footer class="footer section">
+    <!-- <footer class="footer section">
       <div class="container footer-container">
         <div class="footer-description">
           <a href="#logo" class="webstudio-logo white-logo"
@@ -527,10 +535,10 @@
           </button>
         </form>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- modal form order service -->
-    <div data-modal class="backdrop is-hidden">
+    <!-- <div data-modal class="backdrop is-hidden">
       <div class="modal-form">
         <button
           data-modal-close
@@ -602,7 +610,7 @@
           <button class="button btn-accept" type="submit">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
     <script src="./js/modal.js"></script>
   </body>
