@@ -18,36 +18,79 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
   </head>
   <body>
-    <header class="header section">
+    <header class="header-section section">
       <div class="header-container container">
-        <nav class="nav-list">
-          <a class="webstudio-logo" href="./index.html" id="logo"
-            ><span class="design-logo">WEB</span>STUDIO</a
-          >
-          <ul class="site-nav">
-            <li class="item">
-              <a class="link" href="./index.html">Studio</a>
+        <a class="webstudio-logo" href="./index.html" id="logo"
+          >WEB<span class="webstudio-logo__theme-logo">STUDIO</span></a
+        >
+        <svg class="header-menu-icon" width="32" height="22">
+          <use class="menu-icon" href="./images/svg/menu.svg#menu"></use>
+        </svg>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a class="nav-list-link" href="./index.html">Studio</a>
             </li>
 
-            <li class="item">
-              <a class="link current" href="./portfolio.html">Portfolio</a>
+            <li class="nav-list-item">
+              <a class="nav-list-link current" href="./portfolio.html"
+                >Portfolio</a
+              >
             </li>
-            <li class="item"><a class="link" href="">Contacts</a></li>
+
+            <li class="nav-list-item">
+              <a class="nav-list-link" href="">Contacts</a>
+            </li>
           </ul>
         </nav>
         <ul class="adress-list">
-          <li class="item">
-            <a class="link" href="mailto:info@devstudio.com"
+          <li class="adress-list-item">
+            <a class="adress-list-link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li>
-            <a class="link" href="tel:+11(000)1111111">+11 (000) 111-11-11</a>
+          <li class="adress-list-item">
+            <a class="adress-list-link" href="tel:+11(000)1111111"
+              >+11 (000) 111-11-11</a
+            >
           </li>
         </ul>
+        <div class="header-menu">
+          <nav class="nav-menu">
+            <ul class="nav-list">
+              <li class="nav-list-item">
+                <a class="nav-list-link" href="./index.html">Studio</a>
+              </li>
+
+              <li class="nav-list-item">
+                <a class="nav-list-link current" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+
+              <li class="nav-list-item">
+                <a class="nav-list-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="adress-list-menu">
+            <li>
+              <a class="adress-list-link" href="tel:+11(000)1111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="item">
+              <a class="adress-list-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
