@@ -18,108 +18,175 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
     <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
     <header class="header-section section">
       <div class="header-container container">
         <a class="webstudio-logo" href="./index.html" id="logo"
-          >WEB<span class="webstudio-logo__theme-logo">STUDIO</span></a
+          >WEB<span class="webstudio-logo__theme-logo-dark">STUDIO</span></a
         >
-        <svg class="header-menu-icon" width="32" height="22">
-          <use class="menu-icon" href="./images/svg/menu.svg#menu"></use>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+
+        <!-- <button data-menu-button class="menu-button" type="button">
+        <svg class="icon-menu" width="32" height="22">
+        <use  href="./images/svg/menu.svg#menu"></use>
+        
         </svg>
+         </button> -->
+
         <nav class="nav">
           <ul class="nav-list">
-            <li class="nav-list-item">
+            <li class="nav-list- item filter">
               <a class="nav-list-link" href="./index.html">Studio</a>
             </li>
 
-            <li class="nav-list-item">
+            <li class="nav-list- item filter">
               <a class="nav-list-link current" href="./portfolio.html"
                 >Portfolio</a
               >
             </li>
 
-            <li class="nav-list-item">
+            <li class="nav-list- item filter">
               <a class="nav-list-link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
         <ul class="adress-list">
-          <li class="adress-list-item">
+          <li class="adress-list- item filter">
             <a class="adress-list-link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li class="adress-list-item">
+          <li class="adress-list- item filter">
             <a class="adress-list-link" href="tel:+11(000)1111111"
               >+11 (000) 111-11-11</a
             >
           </li>
         </ul>
-        <div class="header-menu">
-          <nav class="nav-menu">
-            <ul class="nav-list">
-              <li class="nav-list-item">
-                <a class="nav-list-link" href="./index.html">Studio</a>
+      </div>
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg
+            class="menu-close-icon"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu pages">
+          <li><a href="./index.html" class="menu-link">Studio</a></li>
+          <li>
+            <a href="./portfolio.html" class="menu-link">Portfolio</a>
+          </li>
+          <li><a href="" class="menu-link">Contacts</a></li>
+        </ul>
+
+        <ul class="mobile-menu socials">
+          <li>
+            <a href="tel:+11(000)1111111" class="menu-link phone"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="menu-link email"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <ul class="icon-list">
+              <li class="list-item">
+                <a class="link" href="">
+                  <svg class="icon" width="16" height="16">
+                    <use href="./images/svg/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
 
-              <li class="nav-list-item">
-                <a class="nav-list-link current" href="./portfolio.html"
-                  >Portfolio</a
-                >
+              <li class="list-item">
+                <a class="link" href="">
+                  <svg class="icon" width="16" height="16">
+                    <use href="./images/svg/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
 
-              <li class="nav-list-item">
-                <a class="nav-list-link" href="">Contacts</a>
+              <li class="list-item">
+                <a class="link" href="">
+                  <svg class="icon" width="16" height="16">
+                    <use href="./images/svg/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="list-item">
+                <a class="link" href="">
+                  <svg class="icon" width="16" height="16">
+                    <use href="./images/svg/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </nav>
-          <ul class="adress-list-menu">
-            <li>
-              <a class="adress-list-link" href="tel:+11(000)1111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-            <li class="item">
-              <a class="adress-list-link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-        </div>
+          </li>
+        </ul>
       </div>
     </header>
     <main>
-      <section class="section filter">
+      <section class="filter-section section">
         <div class="container">
           <h1 class="portfolio visually-hidden">Portfolio</h1>
           <ul class="btnfilter-list">
-            <li class="list-item">
+            <li class="list-item filter">
               <button class="btnfilter" type="button">All</button>
             </li>
 
-            <li class="list-item">
+            <li class="list-item filter">
               <button class="btnfilter" type="button">Web Site</button>
             </li>
 
-            <li class="list-item">
+            <li class="list-item filter">
               <button class="btnfilter" type="button">App</button>
             </li>
 
-            <li class="list-item">
+            <li class="list-item filter">
               <button class="btnfilter" type="button">Design</button>
             </li>
 
-            <li class="list-item">
+            <li class="list-item filter">
               <button class="btnfilter" type="button">Marketing</button>
             </li>
           </ul>
           <ul class="portfolio-list">
-            <li class="list-item">
+            <li class="list-item filter">
               <div class="thumb">
                 <a class="link" href="">
                   <div class="overlay">
@@ -127,8 +194,7 @@
                       class="list-img"
                       src="./images/portfolio/banking-app-interface-concept.jpg"
                       alt="Banking App Interface Concept"
-                      width="360"
-                      height="300"
+                      width="396"
                     />
                     <div class="overlay-box">
                       <p class="text-overlay">
@@ -139,7 +205,7 @@
                     </div>
                   </div>
 
-                  <div class="list-border">
+                  <div class="list-border portfolio">
                     <h2 class="title">Banking App Interface Concept</h2>
                     <p class="paragraph">App</p>
                   </div>
@@ -147,7 +213,7 @@
               </div>
             </li>
 
-            <li class="list-item">
+            <li class="list-item filter">
               <div class="thumb">
                 <a class="link" href="">
                   <div class="overlay">
@@ -155,8 +221,7 @@
                       class="list-img"
                       src="./images/portfolio/cashless-payment.jpg"
                       alt="Cashless Payment"
-                      width="360"
-                      height="300"
+                      width="396"
                     />
                     <div class="overlay-box">
                       <p class="text-overlay">
@@ -167,7 +232,7 @@
                     </div>
                   </div>
 
-                  <div class="list-border">
+                  <div class="list-border portfolio">
                     <h2 class="title">Cashless Payment</h2>
                     <p class="paragraph">Marketing</p>
                   </div>
@@ -175,7 +240,7 @@
               </div>
             </li>
 
-            <li class="list-item">
+            <li class="list-item filter">
               <div class="thumb">
                 <a class="link" href="">
                   <div class="overlay">
@@ -183,8 +248,7 @@
                       class="list-img"
                       src="./images/portfolio/meditaion-app.jpg"
                       alt="Meditaion App"
-                      width="360"
-                      height="300"
+                      width="396"
                     />
                     <div class="overlay-box">
                       <p class="text-overlay">
@@ -195,7 +259,7 @@
                     </div>
                   </div>
 
-                  <div class="list-border">
+                  <div class="list-border portfolio">
                     <h2 class="title">Meditation App</h2>
                     <p class="paragraph">App</p>
                   </div>
@@ -203,7 +267,7 @@
               </div>
             </li>
 
-            <li class="list-item">
+            <li class="list-item filter">
               <div class="thumb">
                 <a class="link" href="">
                   <div class="overlay">
@@ -211,8 +275,7 @@
                       class="list-img"
                       src="./images/portfolio/taxi-service.jpg"
                       alt="Taxi Service"
-                      width="360"
-                      height="300"
+                      width="396"
                     />
                     <div class="overlay-box">
                       <p class="text-overlay">
@@ -223,7 +286,7 @@
                     </div>
                   </div>
 
-                  <div class="list-border">
+                  <div class="list-border portfolio">
                     <h2 class="title">Taxi Service</h2>
                     <p class="paragraph">Marketing</p>
                   </div>
@@ -231,7 +294,7 @@
               </div>
             </li>
 
-            <li class="list-item">
+            <li class="list-item filter">
               <div class="thumb">
                 <a class="link" href="">
                   <div class="overlay">
@@ -239,8 +302,7 @@
                       class="list-img"
                       src="./images/portfolio/screen-illustrations.jpg"
                       alt="Screen Illustrations"
-                      width="360"
-                      height="300"
+                      width="396"
                     />
                     <div class="overlay-box">
                       <p class="text-overlay">
@@ -251,7 +313,7 @@
                     </div>
                   </div>
 
-                  <div class="list-border">
+                  <div class="list-border portfolio">
                     <h2 class="title">Screen Illustrations</h2>
                     <p class="paragraph">Design</p>
                   </div>
@@ -259,7 +321,7 @@
               </div>
             </li>
 
-            <li class="list-item">
+            <li class="list-item filter">
               <div class="thumb">
                 <a class="link" href="">
                   <div class="overlay">
@@ -267,8 +329,7 @@
                       class="list-img"
                       src="./images/portfolio/online-courses.jpg"
                       alt="Online Courses"
-                      width="360"
-                      height="300"
+                      width="396"
                     />
                     <div class="overlay-box">
                       <p class="text-overlay">
@@ -279,7 +340,7 @@
                     </div>
                   </div>
 
-                  <div class="list-border">
+                  <div class="list-border portfolio">
                     <h2 class="title">Online Courses</h2>
                     <p class="paragraph">Marketing</p>
                   </div>
@@ -287,7 +348,7 @@
               </div>
             </li>
 
-            <li class="list-item">
+            <li class="list-item filter">
               <div class="thumb">
                 <a class="link" href="">
                   <div class="overlay">
@@ -295,8 +356,7 @@
                       class="list-img"
                       src="./images/portfolio/instagram-stories-concept.jpg"
                       alt="Instagram Stories Concept"
-                      width="360"
-                      height="300"
+                      width="396"
                     />
                     <div class="overlay-box">
                       <p class="text-overlay">
@@ -307,7 +367,7 @@
                     </div>
                   </div>
 
-                  <div class="list-border">
+                  <div class="list-border portfolio">
                     <h2 class="title">Instagram Stories Concept</h2>
                     <p class="paragraph">Design</p>
                   </div>
@@ -315,7 +375,7 @@
               </div>
             </li>
 
-            <li class="list-item">
+            <li class="list-item filter">
               <div class="thumb">
                 <a class="link" href="">
                   <div class="overlay">
@@ -323,8 +383,7 @@
                       class="list-img"
                       src="./images/portfolio/organic-food.jpg"
                       alt="Organic Food"
-                      width="360"
-                      height="300"
+                      width="396"
                     />
                     <div class="overlay-box">
                       <p class="text-overlay">
@@ -335,7 +394,7 @@
                     </div>
                   </div>
 
-                  <div class="list-border">
+                  <div class="list-border portfolio">
                     <h2 class="title">Organic Food</h2>
                     <p class="paragraph">Web Site</p>
                   </div>
@@ -343,7 +402,7 @@
               </div>
             </li>
 
-            <li class="list-item">
+            <li class="list-item filter">
               <div class="thumb">
                 <a class="link" href="">
                   <div class="overlay">
@@ -351,8 +410,7 @@
                       class="list-img"
                       src="./images/portfolio/fresh-coffee.jpg"
                       alt="Fresh Coffee"
-                      width="360"
-                      height="300"
+                      width="396"
                     />
                     <div class="overlay-box">
                       <p class="text-overlay">
@@ -362,7 +420,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="list-border">
+                  <div class="list-border portfolio">
                     <h2 class="title">Fresh Coffee</h2>
                     <p class="paragraph">Web Site</p>
                   </div>
@@ -374,11 +432,11 @@
       </section>
     </main>
     <!-- footer section -->
-    <footer class="footer section">
+    <footer class="footer-section section">
       <div class="container footer-container">
         <div class="footer-description">
-          <a href="#logo" class="webstudio-logo white-logo"
-            ><span class="design-logo">WEB</span>STUDIO</a
+          <a href="#logo" class="webstudio-logo"
+            >WEB<span class="webstudio-logo__theme-logo-light">STUDIO</span></a
           >
           <p class="paragraph">
             Increase the flow of customers and sales for your business with
@@ -388,33 +446,33 @@
         <div class="footer-icon">
           <h2 class="title">Social media</h2>
           <ul class="icon-list">
-            <li class="list-item">
+            <li class="list-item filter">
               <a class="link" href="">
-                <svg class="f-icon" width="24" height="24">
+                <svg class="icon" width="24" height="24">
                   <use href="./images/svg/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="list-item">
+            <li class="list-item filter">
               <a class="link" href="">
-                <svg class="f-icon" width="24" height="24">
+                <svg class="icon" width="24" height="24">
                   <use href="./images/svg/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="list-item">
+            <li class="list-item filter">
               <a class="link" href="">
-                <svg class="f-icon" width="24" height="24">
+                <svg class="icon" width="24" height="24">
                   <use href="./images/svg/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="list-item">
+            <li class="list-item filter">
               <a class="link" href="">
-                <svg class="f-icon" width="24" height="24">
+                <svg class="icon" width="24" height="24">
                   <use href="./images/svg/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -440,5 +498,12 @@
         </form>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

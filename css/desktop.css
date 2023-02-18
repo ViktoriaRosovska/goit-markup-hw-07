@@ -1,0 +1,233 @@
+@media screen and (min-width: 1200px) {
+    .section {
+      max-width: 1158px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+
+}
+/** ============================== HEADER ============================== **/
+@media screen and (min-width: 1200px){
+  .header-section {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .header-container .webstudio-logo {
+    margin-right: 76px;
+  }
+  .header-container .nav-list {
+    margin-right: 332px;   
+  }
+    .header-container .adress-list-link {
+      font-size: 16px;
+            letter-spacing: .02em;}
+  .header-container .adress-list {
+     display: flex;
+     gap: 40px;  
+   }
+}
+/** ============================== /HEADER ============================== **/
+
+/** ============================== HERO ============================== **/
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    padding-bottom: 188px;
+    padding-top: 188px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/bg-people-office-desktop@1x.jpg");
+    }
+
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+       screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+       screen and (min-width: 1200px) and (min-resolution: 192dpi),
+       screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/bg-people-office-desktop@2x.jpg");
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .hero-title {  
+        min-width: 494px;
+        margin-bottom: 48px;
+    }
+}
+
+/** ============================== /HERO ============================== **/
+
+/** ============================== FEATURES ============================== **/
+@media  screen and (min-width: 1200px) {
+       
+       .features-list {
+         padding-left: 0;
+         margin-bottom: 0;
+         margin-right: -24px;
+         text-align: left;
+         display: flex;
+         justify-content: flex-start;
+
+        }
+        .features-section .title {
+          font-size: 20px;
+          font-weight: var(--font-weight-medium);
+          line-height: 1.2;
+          letter-spacing: .02;
+        }
+        .features-section .paragraph {
+          letter-spacing: .01em;
+          font-weight: 400;
+        }
+        .features-list .list-item {
+          --items: 4;
+          --indent: 24px;
+          flex-basis: calc((100% - (var(--items)-1) * var(--indent)) / var(--items));
+          margin-right: 24px;
+        }
+        .features-list .list-item:last-child {
+          margin-right: 0;
+        }
+        .features-list .feature-icon {
+          margin-bottom: 8px;
+          height: 112px;
+          border-radius: 4px;
+    
+          object-fit: contain;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+    
+          background-color: var(--light-accent-color);
+        }
+                       
+}
+/** ============================== /FEATURES ============================== **/
+
+/** ============================== WORK ============================== **/
+
+@media screen and (min-width: 1200px) {
+    .work-section { display: block; }
+    .work-container .work-list {
+      --items: 3;
+      --indent: 24px;
+      padding-left: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-right: -24px;
+      display: flex;
+    }
+    .work-list .list-item {
+      flex-basis: calc((100% - (var(--items)-1) * var(--indent)) / var(--items));
+      margin-right: 24px;
+    }
+   .work-list .list-item:last-child {
+      margin-right: 0;
+    }   
+}
+
+/** ============================== /WORK ============================== **/
+
+/** ============================== TEAM ============================== **/
+
+@media screen and (min-width: 1200px) {
+    .team-section .team-list {
+            padding-left: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+         
+            display: flex;
+            justify-content: space-between;
+        }
+                    
+      .team-list .list-item {
+        margin: 0;
+
+      }
+    
+       
+                          
+}
+
+/** ============================== /TEAM ============================== **/
+
+/** ============================== CUSTOMERS ============================== **/
+
+@media screen and (min-width: 1200px) {
+    .customers-list {
+           flex-direction: row;
+           gap: 24px
+            
+        }
+    
+    
+      
+    
+      
+}
+
+/** ============================== /CUSTOMERS ============================== **/
+/** ============================== FOOTER ============================== **/
+@media screen and (min-width: 1200px) {
+    .footer-section {
+      padding-bottom: 100px;
+      padding-top: 100px;
+    }
+    .footer-container {
+      text-align: left;
+      display: flex;
+      align-items: flex-start;
+    }
+    .footer-section .footer-description {
+      width: 264px;
+      margin-right: 120px;
+    }
+    .footer-icon .title {
+      margin-bottom: 16px;
+      text-align: left;
+    }
+    
+    .footer-icon {
+      margin-right: 80px;
+    }
+        
+    .subscribe-box { 
+      align-items: flex-end;
+    }              
+    .subscribe-box .subscribe-lab {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 0;
+        }
+    .footer-section .user-email {
+      width: 264px;
+      margin-bottom: 0;
+      margin-top: 16px;
+      margin-right: 24px;
+      margin-left: 0;
+    }
+    .btn-subscr-text {
+      margin-right: 16px;
+    }
+}
+/** ============================== /FOOTER ============================== **/
+
+
+/** ============================== PORTFOLIO.HTML FILTER ============================== **/
+@media screen and (min-width: 1200px) {
+  .portfolio-list {
+    
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .portfolio-list .list-item.filter {
+    --items: 3;
+    --indent: 24px;
+   
+    
+  }
+}
+/** ============================== /PORTFOLIO.HTML FILTER ============================== **/
