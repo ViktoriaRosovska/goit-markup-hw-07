@@ -76,7 +76,6 @@
       padding-bottom: 108px;
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/bg-people-office-tablet@1x.jpg");
         }
-
  }   
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2) , screen and (min-width: 768px) and
@@ -98,13 +97,20 @@
 
 /** ============================== /HERO ============================== **/
 
-
 @media screen and (min-width: 768px) {
     .footer-section .user-email {
         max-width: 264px;
     }
-
 }
+
+/** ============================== WORK ============================== **/
+
+@media screen and (max-width: 1199px) {
+    .work-section {
+        display: none;
+    }
+}
+/** ============================== /WORK ============================== **/
 
 /** ============================== TEAM ============================== **/
 
@@ -190,9 +196,7 @@
         margin-bottom: 16px;
         text-align: left;
     }
-
-  
-
+    
     .subscribe-box {
         align-items: flex-end;
     }
@@ -227,9 +231,6 @@
     .portfolio-list .list-item.filter {
         --items: 2;
         --indent: 24px;
-        
-       
     }
-
 }
 /** ============================== /PORTFOLIO.HTML FILTER ============================== **/
