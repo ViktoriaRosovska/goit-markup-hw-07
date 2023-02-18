@@ -21,6 +21,7 @@
       font-size: 12px;
       letter-spacing: .04em;
     }
+
 }
     @media screen and (min-width: 768px) {
        
@@ -108,7 +109,9 @@
 @media screen and (max-width: 1199px) {
     .work-section {
         display: none;
+
     }
+    
 }
 /** ============================== /WORK ============================== **/
 
@@ -196,7 +199,7 @@
         margin-bottom: 16px;
         text-align: left;
     }
-    
+
     .subscribe-box {
         align-items: flex-end;
     }
@@ -234,3 +237,11 @@
     }
 }
 /** ============================== /PORTFOLIO.HTML FILTER ============================== **/
+
+/** ============================== MODAL FORM ============================== **/
+@media  screen and (min-width: 1200px) {
+  .modal-form {  
+    overflow-y: auto;
+}
+}
+/** ============================== /MODAL FORM ============================== **/

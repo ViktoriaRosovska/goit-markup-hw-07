@@ -6,6 +6,11 @@
       padding-top: 120px;
       padding-bottom: 120px;
     }
+        .modal-form {
+          display: flex;
+          flex-direction: column;
+          /* overflow-y: scroll; */
+        }
 }
 /** ============================== HEADER ============================== **/
 
