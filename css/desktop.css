@@ -6,9 +6,9 @@
       padding-top: 120px;
       padding-bottom: 120px;
     }
-
 }
 /** ============================== HEADER ============================== **/
+
 @media screen and (min-width: 1200px){
   .header-section {
     padding-top: 0;
@@ -38,17 +38,13 @@
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/bg-people-office-desktop@1x.jpg");
     }
 
-}
-
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
-       screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
-       screen and (min-width: 1200px) and (min-resolution: 192dpi),
-       screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  @media  screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2),
+                     (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero-section {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/bg-people-office-desktop@2x.jpg");
     }
+  }
 }
-
 
 @media screen and (min-width: 1200px) {
     .hero-title {  
@@ -84,7 +80,7 @@
         .features-list .list-item {
           --items: 4;
           --indent: 24px;
-          flex-basis: calc((100% - (var(--items)-1) * var(--indent)) / var(--items));
+          flex-basis: calc((100% - (var(--items) - 1) * var(--indent)) / var(--items));
           margin-right: 24px;
         }
         .features-list .list-item:last-child {
@@ -120,7 +116,7 @@
       display: flex;
     }
     .work-list .list-item {
-      flex-basis: calc((100% - (var(--items)-1) * var(--indent)) / var(--items));
+      flex-basis: calc((100% - (var(--items) - 1) * var(--indent)) / var(--items));
       margin-right: 24px;
     }
    .work-list .list-item:last-child {
@@ -140,15 +136,11 @@
          
             display: flex;
             justify-content: space-between;
-        }
-                    
+        }  
       .team-list .list-item {
         margin: 0;
-
       }
-    
-       
-                          
+                      
 }
 
 /** ============================== /TEAM ============================== **/
@@ -158,17 +150,12 @@
 @media screen and (min-width: 1200px) {
     .customers-list {
            flex-direction: row;
-           gap: 24px
-            
-        }
-    
-    
-      
-    
-      
+           gap: 24px;   
+        }      
 }
 
 /** ============================== /CUSTOMERS ============================== **/
+
 /** ============================== FOOTER ============================== **/
 @media screen and (min-width: 1200px) {
     .footer-section {
@@ -219,15 +206,12 @@
 /** ============================== PORTFOLIO.HTML FILTER ============================== **/
 @media screen and (min-width: 1200px) {
   .portfolio-list {
+    row-gap: 48px;
     
-    column-gap: 24px;
-    row-gap: 72px;
   }
   .portfolio-list .list-item.filter {
     --items: 3;
-    --indent: 24px;
-   
-    
+    --indent: 24px; 
   }
 }
 /** ============================== /PORTFOLIO.HTML FILTER ============================== **/
