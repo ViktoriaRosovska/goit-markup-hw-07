@@ -74,14 +74,34 @@ a {
 }
 
 .section {
-  padding-left: 16px;
-  padding-right: 16px;
   padding-top: 96px;
   padding-bottom: 96px;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.container {
+  display: block;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 320px) {
+  .section {
+    width: 320px;
+  }
+  .container {
+   width: 100%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width:767px) {
+  .container {
+    max-width: 428px;
+  }
 }
 
 .menu-toggle {
@@ -213,11 +233,9 @@ a {
   height: 24px;
 }
 @media screen and (max-width: 479px) {
-  .section {
-    min-width: 320px;
-    
-  }
+  
   .menu-container {
+    min-width: 320px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -226,14 +244,6 @@ a {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .section {
-    max-width: 428px;
-  }
-}
-.container {
-  text-align: center; 
-}
 .webstudio-logo {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -283,10 +293,9 @@ a {
 .paragraph {
   margin-bottom: 8px;
   font-size: var(--main-font-size);
-  line-height: 1.5;
   font-weight: 400;
   color: var(--primary-text-color);
-  letter-spacing: .02em;
+  
 }
 
 .button {
@@ -331,22 +340,13 @@ body {
 .header-section {
   padding-top: 0;
   padding-bottom: 0;
-  position: relative;
+  /* position: relative; */
 }
 .header-container {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.section.header::after {
-  content: "";
-  display: none;
-  width: 100%;
-  border: 1px solid var(--alternative-color);
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container .nav {
   display: none;
@@ -375,7 +375,8 @@ body {
 
 .header-section::after {
   content: "";
-  display: none;
+  display: block;
+  position: absolute;
   width: 100%;
   border: 1px solid var(--alternative-color);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -393,9 +394,9 @@ body {
 /** ============================== HERO ============================== **/
 
 .hero-section {
-  background-color: var(--primary-page-color);
+  background-color: var(--primary-page-color); 
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   color: var(--primary-white-color);
 }
@@ -409,22 +410,24 @@ body {
   font-weight: var(--font-weight-bold);
   font-size: var(--main-title-font-size);
   line-height: 1.11;
-  max-width: 320px;
 
   color: var(--accent-white-color);
 }
+
+
 
 @media screen and (max-width: 767px){
   .hero-section {
     padding-top: 112px;
     padding-bottom: 112px;
-    min-width: 320px;
-    max-width: 428px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/bg-people-office-mobile@1x.jpg");
-}  
+    background-size: cover; 
+} 
+
   @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi),(min-resolution: 2dppx) {
     .hero-section {
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/bg-people-office-mobile@2x.jpg');
+     
     }
   }
 }
@@ -433,9 +436,8 @@ body {
 
 /** ============================== WORK ============================== **/
 
-@media screen and (max-width: 1199px){
-  .work-section { display: none; }
-}
+/* display: none on the section */
+
 /** ============================== /WORK ============================== **/
 
 
@@ -458,7 +460,6 @@ body {
 }
 
 @media screen and (max-width: 767px){
-  
   .features-section .list-item:not(:last-child) {
   margin-bottom: 72px;
 }
@@ -490,8 +491,7 @@ body {
 @media screen and (max-width: 767px) {
   .team-list>.list-item {
       margin-bottom: 72px;
-    }
-  
+    } 
 }
 
 .team-section .list-border {
@@ -514,8 +514,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  
-
 }
 .icon-list .link {
  display: flex;
@@ -685,7 +683,6 @@ body {
        background-image: url("../images/svg/icon-modal/telegram.svg");
        background-size: contain;
        background-position: center;
-  
      }
  .user-email {
    margin-top: 16px;
@@ -708,20 +705,14 @@ body {
    
  }
 @media screen and (max-width: 767px) {
-  .subscribe-box .subscribe-lab {
-     
+  .subscribe-box .subscribe-lab {   
       width: 100%;
       flex-direction: column;
-      align-items: stretch;
-        
+      align-items: stretch;      
     }
   
-   .footer-section {
-    min-width: 320px; 
-    max-width: 480px;
-}
-
-.footer-container {
+  
+.footer-container.container {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -741,7 +732,6 @@ body {
 }
 
 .footer-icon .title {
- 
   margin-left: auto;
   margin-right: auto;
 }
@@ -753,7 +743,6 @@ body {
 }
 
 .subscribe-box {
- 
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -792,8 +781,6 @@ body {
 
 .modal-form {
   position: fixed;
-  /* display: block;
-  overflow-y: scroll; */
   top: 50%;
   left: 50%;
   max-height: 100%;

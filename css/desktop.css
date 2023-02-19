@@ -1,17 +1,20 @@
 @media screen and (min-width: 1200px) {
     .section {
+      padding-top: 120px;
+      padding-bottom: 120px;
+    
+    }
+    .container {
       max-width: 1158px;
       padding-left: 15px;
       padding-right: 15px;
-      padding-top: 120px;
-      padding-bottom: 120px;
     }
         .modal-form {
           display: flex;
           flex-direction: column;
-          /* overflow-y: scroll; */
         }
 }
+
 /** ============================== HEADER ============================== **/
 
 @media screen and (min-width: 1200px){
@@ -38,10 +41,14 @@
 /** ============================== HERO ============================== **/
 @media screen and (min-width: 1200px) {
   .hero-section {
+   
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 188px;
     padding-top: 188px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/bg-people-office-desktop@1x.jpg");
-    }
+    background-size: cover;
+  }
 
   @media  screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2),
                      (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -51,12 +58,17 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
+    .section {
+      background-size: contain;
+    }
     .hero-title {  
         min-width: 494px;
         margin-bottom: 48px;
     }
 }
+
+
 
 /** ============================== /HERO ============================== **/
 
@@ -66,7 +78,6 @@
        .features-list {
          padding-left: 0;
          margin-bottom: 0;
-         margin-right: -24px;
          text-align: left;
          display: flex;
          justify-content: flex-start;
@@ -117,7 +128,6 @@
       padding-left: 0;
       margin-top: 0;
       margin-bottom: 0;
-      margin-right: -24px;
       display: flex;
     }
     .work-list .list-item {
@@ -163,14 +173,13 @@
 
 /** ============================== FOOTER ============================== **/
 @media screen and (min-width: 1200px) {
-    .footer-section {
-      padding-bottom: 100px;
-      padding-top: 100px;
-    }
+   
     .footer-container {
       text-align: left;
       display: flex;
       align-items: flex-start;
+      padding-bottom: 100px;
+      padding-top: 100px;
     }
     .footer-section .footer-description {
       width: 264px;
