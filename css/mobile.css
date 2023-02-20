@@ -91,16 +91,23 @@ a {
 
 @media screen and (max-width: 319px) {
   .section {
-    width: 320px;
+    width: 319px;
   }
+
   .container {
-   width: 100%;
+    width: 100%;
   }
 }
-
-@media screen and (min-width: 320px) and (max-width:767px) {
-  .container {
+@media screen and (min-width: 320px) and (max-width:479px) {
+  .section {
+    min-width: 320px;
     max-width: 428px;
+  }
+ }
+
+@media screen and (min-width: 480px) and (max-width:767px) {
+  .container {
+  max-width: 428px;
   }
 }
 
