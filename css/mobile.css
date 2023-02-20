@@ -91,7 +91,7 @@ a {
 
 @media screen and (max-width: 319px) {
   .section {
-    width: 319px;
+    min-width: 319px;
   }
 
   .container {
@@ -101,7 +101,7 @@ a {
 @media screen and (min-width: 320px) and (max-width:479px) {
   .section {
     min-width: 320px;
-    max-width: 428px;
+    max-width: 479px;
   }
  }
 
@@ -387,9 +387,11 @@ body {
 .header-section::after {
   content: "";
   display: block;
-  position: absolute;
+  height: 1px;
+  background-color: var(--alternative-color);
   width: 100%;
-  border: 1px solid var(--alternative-color);
+  
+  
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 1px 6px rgba(46, 47, 66, 0.08);
