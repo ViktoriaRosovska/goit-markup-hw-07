@@ -112,17 +112,15 @@
 /** ============================== TEAM ============================== **/
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-    .team-section .team-list {
-        
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            row-gap: 64px;
-            column-gap: 24px;
-            
-        }
-        .team-section .list-item {
-            margin: 0;
+    .team-section .team-list { 
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       row-gap: 64px;
+       column-gap: 24px;    
+      }
+      .team-section .list-item {
+        margin: 0;
         }    
         
 }
@@ -134,20 +132,22 @@
     .features-list {
         
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        width: 736px;
-       column-gap: 24px;
-       
-        row-gap: 72px;
-         
+        /* width: 736px; */
+        column-gap: 24px;
+      
+        row-gap: 72px; 
            
     }
     .features-section .list-item {
-       flex-basis: 351px;
-       height: 120px;
-       text-align: left;
-       
+       --items: 2;
+        --indent: 24px;
+        flex-basis: calc((100% - (var(--items) - 1) * var(--indent)) / var(--items));
+        display: block;
+        height: 120px;
+        text-align: left; 
     }
 }
 
