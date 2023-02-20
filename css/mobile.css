@@ -140,7 +140,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   min-width: 320px;
   min-height: 100%;
   padding-top: 80px;
