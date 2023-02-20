@@ -535,13 +535,12 @@ body {
 /** ============================== /OUR TEAM ============================== **/
 
 /** ============================== CUSTOMERS ============================== **/
-.customers-list {
+.customers-section .customers-list {
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
   display: flex;
-  
-  justify-content: space-between;
+  justify-content: center;
 }
 .customers-list .list-item:hover,
 .customers-list .list-item:focus {
@@ -555,7 +554,7 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-list .list-item {
-  width: 190px;
+  width: 168px;
   height: 88px;
   border: 1px solid var(--icon-customers-color);
   border-radius: 4px;
@@ -568,7 +567,7 @@ body {
 .list-item:focus .icon {
   fill: var(--hover-accent-color);
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 319px) {
   .customers-list {
     flex-direction: column;
     align-items: center;
@@ -579,15 +578,16 @@ body {
   }
 
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .customers-list {
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  
+  
+  .customers-section .customers-list {
     align-items: center;
     align-content: center;
     row-gap: 72px;
     column-gap: 16px;
     flex-wrap: wrap;
   } 
- 
 }
 
 /** ============================== /CUSTOMERS ============================== **/
@@ -793,7 +793,9 @@ body {
 .modal-form {
   position: fixed;
   top: 50%;
-  left: 50%;
+  left: 50%; 
+  display: block;
+  overflow-y: scroll;
   max-height: 100%;
   min-width: 320px;
   padding-top: 72px;
@@ -813,7 +815,8 @@ body {
 }
 @media screen and (min-width: 480px){
   .modal-form {
-    width: 408px;
+    max-width: 408px;
+   
   }
 }
 .btn-close {
