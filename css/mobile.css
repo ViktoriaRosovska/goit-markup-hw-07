@@ -121,14 +121,18 @@ a {
   padding: 0;
   background-color: transparent;
   border: none;
-  cursor: pointer;
   outline: none;
   color: var(--primary-page-color);
+  position: absolute;
 }
-.menu-toggle:hover,
-.menu-toggle:focus {
-  color: var(--hover-accent-color);
-}
+
+.menu-toggle.close-btn {
+  background-color: var(--alternative-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  top: 40px;
+  right: 40px;
+  border-radius: 50%;
+ }
 
 @media (min-width: 768px) {
   .menu-toggle {
