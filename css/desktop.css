@@ -121,7 +121,10 @@
 /** ============================== WORK ============================== **/
 
 @media screen and (min-width: 1200px) {
-    .work-section { display: block; }
+    .work-section { 
+      display: block; 
+      padding-top: 0;
+    }
     .work-container .work-list {
       --items: 3;
       --indent: 24px;
@@ -173,13 +176,14 @@
 
 /** ============================== FOOTER ============================== **/
 @media screen and (min-width: 1200px) {
-   
+   .footer-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+   }
     .footer-container {
       text-align: left;
       display: flex;
       align-items: flex-start;
-      padding-bottom: 100px;
-      padding-top: 100px;
     }
     .footer-section .footer-description {
       width: 264px;
