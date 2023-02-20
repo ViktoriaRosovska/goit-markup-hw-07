@@ -467,7 +467,7 @@ body {
 .features-section .title {
   font-size: var(--main-title-font-size);
   font-weight: var(--font-weight-bold);
-  line-height: 1.11;
+  line-height: 1.5;
 }
 
 .features-section .paragraph {

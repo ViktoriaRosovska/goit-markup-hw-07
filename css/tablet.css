@@ -135,7 +135,6 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        /* width: 736px; */
         column-gap: 24px;
       
         row-gap: 72px; 
