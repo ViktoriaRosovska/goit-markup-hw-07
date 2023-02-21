@@ -261,8 +261,8 @@ a {
   position: absolute;
   min-height: 24px;
   min-width: 24px;
-  top:-56px;
-  right: -16px;
+  top: -56px;
+  right: 0;
   color: var(--primary-page-color);
   border-radius: 50%;
   background-color: var(--alternative-color);
