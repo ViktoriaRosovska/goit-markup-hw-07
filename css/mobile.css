@@ -206,7 +206,7 @@ a {
 .menu-toggle {
   position: absolute;
   top: 24px;
-  right: 16px;
+  right: 24px;
   min-height: 22px;
   min-width: 32px;
   display: flex;
@@ -247,6 +247,7 @@ a {
   transition: transform 500ms ease-in-out, visibility 500ms step-end;
   display: flex;
   flex-direction: column;
+  align-items:flex-start;
   justify-content: space-between;
   visibility: hidden;
 }
@@ -261,8 +262,8 @@ a {
   position: absolute;
   min-height: 24px;
   min-width: 24px;
-  top: -56px;
-  right: 0;
+  top: 24px;
+  right: 24px;
   color: var(--primary-page-color);
   border-radius: 50%;
   background-color: var(--alternative-color);
@@ -278,11 +279,14 @@ a {
   
 }
 
-.mobile-menu {
+.mob-menu {
   padding: 0;
   margin: 0;
 }
 
+.mob-menu.socials {
+  margin-top: auto;
+}
 .menu-container .menu-link {
   display: block;
   color: var(--primary-page-color);
@@ -290,51 +294,51 @@ a {
   margin-bottom: 40px;
 }
 
-.mobile-menu .menu-link {
+.mob-menu .menu-link {
   font-weight: var(--font-weight-bold);
   font-size: var(--main-title-font-size);
   line-height: 1.11;
 
 }
 
-.mobile-menu.pages {
+.mob-menu.pages {
   user-select: none;
 }
 
-.mobile-menu.pages .menu-link:hover,
-.mobile-menu.pages .menu-link:focus {
+.mob-menu.pages .menu-link:hover,
+.mob-menu.pages .menu-link:focus {
   color: var(--hover-accent-color);
 }
 
-.mobile-menu.socials .menu-link.phone {
+.mob-menu.socials .menu-link.phone {
   font-size: 36px;
   font-weight: 500;
 
   letter-spacing: .01em;
 }
 
-.mobile-menu.socials .menu-link.email {
+.mob-menu.socials .menu-link.email {
   font-size: 20px;
   font-weight: var(--font-weight-medium);
 
 }
 
-.mobile-menu.socials .menu-link.email:hover,
-.mobile-menu.socials .menu-link.email:focus {
+.mob-menu.socials .menu-link.email:hover,
+.mob-menu.socials .menu-link.email:focus {
   color: var(--hover-accent-color);
 }
 
-.mobile-menu.socials .menu-link.phone:hover,
-.mobile-menu.socials .menu-link.phone:focus {
+.mob-menu.socials .menu-link.phone:hover,
+.mob-menu.socials .menu-link.phone:focus {
   color: var(--hover-accent-color);
 }
 
-.mobile-menu .icon-list {
+.mob-menu .icon-list {
   display: flex;
   justify-content: space-between;
 }
 
-.mobile-menu .icon {
+.mob-menu .icon {
   width: 24px;
   height: 24px;
 }
