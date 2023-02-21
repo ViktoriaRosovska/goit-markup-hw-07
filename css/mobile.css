@@ -199,10 +199,7 @@ a {
 .menu-burger {
   stroke: var(--primary-page-color);
 }
-.menu-toggle:hover .menu-burger,
-.menu-toggle:focus .menu-burger {
-  stroke: var(--hover-accent-color);
-}
+
 .menu-toggle {
   position: absolute;
   top: 24px;
@@ -218,7 +215,6 @@ a {
   border: none;
   outline: none;
   color: var(--primary-page-color);
-  position: absolute;
 }
 
 @media (min-width: 768px) {
@@ -235,8 +231,6 @@ a {
   min-width: 320px;
   min-height: 100%;
   padding-top: 80px;
-
-
   padding-left: 40px;
   padding-bottom: 40px;
   padding-right: 40px;
@@ -271,12 +265,11 @@ a {
   fill: var(--primary-text-color);
 }
 
-.menu-container .menu-toggle:hover,
-.menu-container .menu-toggle:focus {
+.menu-container .menu-toggle.close-btn:hover,
+.menu-container .menu-toggle.close-btn:focus {
   background-color: var(--hover-accent-color);
   border-color: var(--hover-accent-color);
   fill: var(--primary-white-color);
-  
 }
 
 .mob-menu {
@@ -457,7 +450,9 @@ body {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/bg-people-office-mobile@1x.jpg");
     background-size: cover; 
 } 
-
+    .hero-title {
+      width: 320px;
+    }
   @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi),(min-resolution: 2dppx) {
     .hero-section {
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/bg-people-office-mobile@2x.jpg');
