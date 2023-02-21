@@ -262,7 +262,7 @@ a {
   min-height: 24px;
   min-width: 24px;
   top:-56px;
-  right: -16px;
+  right: 0px;
   color: var(--primary-page-color);
   border-radius: 50%;
   background-color: var(--alternative-color);
