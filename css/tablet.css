@@ -1,10 +1,7 @@
 @media screen and (min-width: 768px) and (max-width: 1199px){
   .container {
     max-width: 768px;
-    
   }
- 
-
 }
 /** ============================== HEADER ============================== **/
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -90,11 +87,7 @@
 /** ============================== /HERO ============================== **/
 
 @media screen and (min-width: 768px) {
-  
-  .container {
-    max-width: 768px;
-  }
-    .footer-section .user-email {
+   .footer-section .user-email {
         max-width: 264px;
     }
 }
@@ -136,7 +129,6 @@
         flex-wrap: wrap;
         justify-content: center;
         column-gap: 24px;
-      
         row-gap: 72px; 
            
     }
@@ -171,7 +163,7 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .footer-section {
         padding-left: 108px;
-        padding-right: 164px;
+        
     }
 
     .footer-container {
@@ -179,7 +171,9 @@
         flex-wrap: wrap;
         flex-direction: row;
         text-align: left;
-        gap: 24px;
+        column-gap: 24px;
+        row-gap: 72px;
+
     }
 
     .footer-section .footer-description {
